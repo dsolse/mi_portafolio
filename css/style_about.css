@@ -128,8 +128,13 @@
 
 .description-p {
   padding: 2em;
-  /* margin-left: 5%; */
-  /* margin-right: 5%; */
+  display: flex;
+  align-items: center;
+}
+
+.description-p span {
+  font-size: larger;
+  margin-right: 2em;
 }
 
 #image-per {

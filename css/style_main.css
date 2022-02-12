@@ -18,6 +18,7 @@ header {
   position: fixed;
   width: 100%;
   top: 0;
+  left: 0;
   z-index: 10000;
 }
 
@@ -58,7 +59,8 @@ header {
   opacity: 0.7;
 }
 
-.nav-div li {
+
+.nav-div .button {
   margin-right: 0.9em;
   padding: 1em;
   font-size: large;
@@ -70,14 +72,14 @@ header {
   color: #555555;
 }
 
-.nav-div li:hover {
+.nav-div .button:hover {
   border-radius: 3px;
   background-color: #aac32f63;
   border: solid 1px gray;
 }
 
-.nav-div li:hover a {
-  vertical-align: middle;
+.nav-div li:hover h4 {
+  vertical-align:bottom;
 }
 
 .selected-route {

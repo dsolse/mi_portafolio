@@ -3,6 +3,10 @@
 .card {
     padding: 3em;
     flex-direction: column;
+    animation-name: move-from;
+    animation-duration: 1s;
+    margin-bottom: 10em;
+    animation-fill-mode: forwards;
 }
 
 .card h1 {
@@ -25,4 +29,12 @@
 
 .red img {
     width: 4em;
+}
+
+@keyframes move-from {
+    from {
+        margin-bottom: 10em;
+    } to {
+        margin-bottom: 5em;
+    }
 }
