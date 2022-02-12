@@ -1,204 +1,188 @@
 @import "../css/style_main.css";
 
-.bg-hab::before {
-	content: "";
-	position: absolute;
-	background-position: center;
-	background-color: #dee0ba;
-	height: 100vh;
-	z-index: -500;
-	width: 100vw;
-	opacity: .3;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-}
-
 .bg-hab {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	margin: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: auto;
 }
 
 .bg-project {
-	background-color: var(--main-bg-color);
-	opacity: .5;
-	position: absolute;
-	display: flex;
-	z-index: -300;
-	height: 100%;
-	left: 0;
-	top: 0;
-	bottom: 0;
-	width: 30%;
-	padding: 0;
+  background-color: var(--main-bg-color);
+  opacity: 0.5;
+  position: absolute;
+  display: flex;
+  z-index: -300;
+  height: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 30%;
+  padding: 0;
 }
 
 .bg-project h1 {
-	position: relative;
-	background-color: aqua;
-	display: inline;	
-	margin: auto;
-	margin-left: .5em;
-	transform: rotate(-90deg);
-	/* font-size:450%; */
+  color: white;
+  position: absolute;
+  transform: translateX(-100%) rotate(-90deg);
+  transform-origin: right;
+  left: 50%;
+  top: 30px;
+  margin: auto;
+  font-size:450%;
 }
 
 .container-skills {
-	margin: auto;
-	display: flex;
-	flex-direction: column;
-	justify-content:stretch;
-	align-items: center;
-	width: 80%;
-	height: 75%;
-	margin-bottom: 2.4em;
-	gap: 2em;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+  width: 80%;
+  height: 75%;
+  margin-bottom: 2.4em;
+  gap: 2em;
 }
 
 /* override de card style in style_main.css */
 
 .container-skills .card {
-	z-index: 30;
-	padding: 1em;
-	height: max-content;
-	width: max-content;
+  z-index: 30;
+  padding: 1em;
+  height: max-content;
+  width: max-content;
 }
 
 .project-card {
-	padding: 2em;
+  padding: 2em;
 }
 
 .project-card .line-decoration {
-	height: 1em;
-	width: 80%;
-	background-color: var(--main-bg-color);
-	margin: auto;
-	margin-left: 0;
-	margin-top: 1em;
-	margin-bottom: 1em;
+  height: 1em;
+  width: 80%;
+  background-color: var(--main-bg-color);
+  margin: auto;
+  margin-left: 0;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 .container-skills .card > img {
-	height: 4em;
-	width: auto;
+  height: 4em;
+  width: auto;
 }
 
 .container-skills .card > span {
-	text-align: center;
-	width: max-content;
-	margin: auto;
+  text-align: center;
+  width: max-content;
+  margin: auto;
 }
 
 .row-skills {
-	display: flex;
-	gap: 2em;
-	height: max-content;
-	flex: 1;
+  display: flex;
+  gap: 2em;
+  height: max-content;
+  flex: 1;
 }
 
 .container-skills-work .card {
-	min-width: 7em;
-	max-height: 4em;
+  min-width: 7em;
+  max-height: 4em;
 }
 
 .container-skills-work {
-	gap: 1em;
+  gap: 1em;
 }
 
 .idioma {
-	position: relative;
+  position: relative;
 }
 
 .idioma:first-child img {
-	border-radius: 1em;
+  border-radius: 1em;
 }
 
 .idioma:nth-child(2) {
-	margin-left: 3em;
-	margin-right: 3em;
+  margin-left: 3em;
+  margin-right: 3em;
 }
 
 .idioma img {
-	width: 5em;
+  width: 5em;
 }
 
 .idioma p {
-	text-align: center;
-	position: absolute;
+  text-align: center;
+  position: absolute;
 }
-
 
 .grid-projects {
-	margin: auto;
-	width: 80%;
-	height: max-content;
-	top: 50%;
-	margin-top: 7em;
-	display: flex;
-	gap: 2em
+  margin: auto;
+  width: 80%;
+  height: max-content;
+  top: 50%;
+  margin-top: 7em;
+  display: flex;
+  gap: 2em;
 }
 
-
 .page-grid {
-	height: max-content;
+  height: max-content;
 }
 
 .grid-projects .card {
-	margin: 0;
-	flex-direction: column;
-	width: auto;
-	height: max-content;
+  margin: 0;
+  flex-direction: column;
+  width: auto;
+  height: max-content;
 }
 
 .grid-projects .project-card::before {
-	content: "";
-	position: absolute;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	z-index: -300;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	opacity: .5;
+  content: "";
+  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -300;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.5;
 }
 
 #col-1 .project-card:nth-child(2)::before {
-	content: "";
-	background-color: yellowgreen;
-	background-image: url("../res/chubby_app.png");
+  content: "";
+  background-color: yellowgreen;
+  background-image: url("../res/chubby_app.png");
 }
 
 #col-2 .project-card:nth-child(1):before {
-	background-image: url("../res/taller_palacios.jpg");
+  background-image: url("../res/taller_palacios.jpg");
 }
 
 #col-2 .project-card:nth-child(2)::before {
-	background-image: url("../res/le-croissant.jpg");
+  background-image: url("../res/le-croissant.jpg");
 }
 
 #col-2 .project-card:nth-child(2)::before {
-	background-image: url("../res/le-croissant.jpg");
+  background-image: url("../res/le-croissant.jpg");
 }
 
 .project-card p {
-	padding: .5em;
-	background-color: rgba(255, 255, 255, .7);
+  padding: 0.5em;
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .grid-column {
-	display: flex;
-	flex-direction: column;
-	gap: 2em;
-	max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  max-width: 50%;
 }
 
 .offset {
-	height: 15em;
+  height: 15em;
 }
