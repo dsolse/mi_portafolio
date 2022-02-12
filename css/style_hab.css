@@ -153,6 +153,45 @@
 	height: max-content;
 }
 
+.grid-projects .project-card::before {
+	content: "";
+	position: absolute;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	z-index: -300;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: .5;
+}
+
+#col-1 .project-card:nth-child(2)::before {
+	content: "";
+	background-color: yellowgreen;
+	background-image: url("../res/chubby_app.png");
+}
+
+#col-2 .project-card:nth-child(1):before {
+	background-image: url("../res/taller_palacios.jpg");
+}
+
+#col-2 .project-card:nth-child(2)::before {
+	background-image: url("../res/le-croissant.jpg");
+}
+
+#col-2 .project-card:nth-child(2)::before {
+	background-image: url("../res/le-croissant.jpg");
+}
+
+.project-card p {
+	padding: .5em;
+	background-color: rgba(255, 255, 255, .7);
+}
+
 .grid-column {
 	display: flex;
 	flex-direction: column;
