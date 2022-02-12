@@ -1,0 +1,144 @@
+@import "../css/style_main.css";
+
+/* Description page */
+
+:root {
+  --anim-card-offset-p: 15em;
+  --anim-card-offset-n: -15em
+}
+
+.page-cv {
+  overflow: hidden;
+}
+
+.description-card {
+  width: 80%;
+  height: 70%;
+  margin: auto;
+  margin-bottom: 4em;
+}
+
+.card-grid {
+  display: grid;
+  gap: 0.4em;
+  column-gap: 0.6em;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+.card-basicinfo {
+  height: auto;
+  width: auto;
+  margin: 0;
+  background-color: var(--main-bg-color);
+  grid-row-start: 1;
+  grid-row-end: 5;
+  animation-name: card-from-up;
+  animation-duration: 1s;
+}
+
+.grid-span-2 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.description-card-header {
+  width: auto;
+  height: auto;
+  margin: 0;
+  animation-name: card-from-right;
+  animation-duration: 1s;
+}
+
+.image-frame {
+  position: relative;
+  margin: auto;
+  height: 8em;
+  width: 8em;
+  margin-top: 3em;
+  border: solid 0.5em white;
+  border-radius: 0.2em;
+}
+
+.image-frame > img {
+  position: absolute;
+  margin: auto;
+  top: -0.9em;
+  left: -0.7em;
+  border-radius: 0.2em;
+}
+
+.description {
+  width: auto;
+  height: auto;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  margin: 0;
+  animation-name: card-from-bottom;
+  animation-duration: 1s;
+}
+
+.description-question {
+  margin: auto;
+  margin-left: 10%;
+  font-weight: 200;
+}
+
+.img-border {
+  position: absolute;
+  height: 1em;
+  width: 50%;
+  background-color: var(--main-bg-color);
+}
+
+.top-img-border {
+  top: 10%;
+  left: 5%;
+  border-bottom-right-radius: 1em;
+}
+
+.bottom-img-border {
+  top: 20%;
+  right: 5%;
+  width: 10%;
+  border-top-left-radius: 1em;
+}
+
+.description-p {
+  padding: 2em;
+  /* margin-left: 5%; */
+  /* margin-right: 5%; */
+}
+
+#image-per {
+  width: 8em;
+}
+
+
+@keyframes card-from-bottom {
+  from {
+    margin-bottom: var(--anim-card-offset-n);
+    margin-top: var(--anim-card-offset-p);
+  } to {
+    margin: 0;
+  }
+}
+
+@keyframes card-from-right {
+  from {
+    margin-right: var(--anim-card-offset-n);
+    margin-left: var(--anim-card-offset-p);
+  } to {
+    margin: 0;
+  }
+}
+
+@keyframes card-from-up {
+  from {
+    margin-top: var(--anim-card-offset-n);
+    margin-bottom: var(--anim-card-offset-p);
+  } to {
+    margin: 0;
+  }
+}
