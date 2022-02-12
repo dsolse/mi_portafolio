@@ -1,1 +1,10 @@
 @import "../css/style_main.css";
+
+.card {
+    padding: 3em;
+    justify-content: center;
+}
+
+.card h1 {
+    text-align: center;
+}

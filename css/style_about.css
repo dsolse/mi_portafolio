@@ -13,9 +13,9 @@
 
 .description-card {
   width: 80%;
-  height: 70%;
+  height: 80%;
   margin: auto;
-  margin-bottom: 4em;
+  margin-bottom: 2em;
 }
 
 .card-grid {
@@ -29,14 +29,35 @@
 
 .card-basicinfo {
   height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
   width: auto;
   margin: 0;
+  color: white;
   background-color: var(--main-bg-color);
   grid-row-start: 1;
   grid-row-end: 5;
   animation-name: card-from-up;
   animation-duration: 1s;
 }
+
+.card-basicinfo h2 {
+  text-align: center;
+  margin: auto;
+}
+
+.card-basicinfo ul {
+  margin-bottom: 2em;
+}
+
+.logros {
+  margin: auto;
+  margin-left: 2em;
+  margin-right: 1em;
+  font-size: small;
+}
+
 
 .grid-span-2 {
   grid-column-start: 2;

@@ -1,10 +1,22 @@
 @import "../css/style_main.css";
 
+body {
+  overflow-x: hidden;
+}
+
 .bg-hab {
   position: relative;
   display: flex;
   justify-content: center;
   margin: auto;
+}
+
+.separation {
+  width: 30%;
+  margin-top: .4em;
+  margin-bottom: .4em;
+  height: 0.3em;
+  background-color: var(--main-bg-color);
 }
 
 .bg-project {
@@ -13,7 +25,7 @@
   position: absolute;
   display: flex;
   z-index: -300;
-  height: 100%;
+  height: 200%;
   left: 0;
   top: 0;
   bottom: 0;
@@ -26,10 +38,9 @@
   position: absolute;
   transform: translateX(-100%) rotate(-90deg);
   transform-origin: right;
-  left: 50%;
-  top: 30px;
+  left: 70%;
   margin: auto;
-  font-size:450%;
+  font-size: 600%;
 }
 
 .container-skills {
@@ -58,9 +69,10 @@
 }
 
 .project-card .line-decoration {
-  height: 1em;
+  height: .5em;
+  border-radius: .3em;
   width: 80%;
-  background-color: var(--main-bg-color);
+  background-color: rgb(63, 104, 73);
   margin: auto;
   margin-left: 0;
   margin-top: 1em;
@@ -85,9 +97,19 @@
   flex: 1;
 }
 
+.row-skills:nth-child(even){
+  animation-name: from-right;
+  animation-duration: 1s;
+}
+
+.row-skills:nth-child(odd){
+  animation-name: from-left;
+  animation-duration: 1s;
+}
+
 .container-skills-work .card {
-  min-width: 7em;
-  max-height: 4em;
+  min-width: 6em;
+  min-height: 3em;
 }
 
 .container-skills-work {
@@ -113,7 +135,6 @@
 
 .idioma p {
   text-align: center;
-  position: absolute;
 }
 
 .grid-projects {
@@ -122,6 +143,7 @@
   height: max-content;
   top: 50%;
   margin-top: 7em;
+  margin-bottom: 4em;
   display: flex;
   gap: 2em;
 }
@@ -130,11 +152,20 @@
   height: max-content;
 }
 
+.page-grid .bg-project {
+	height: 100%;
+}
+
 .grid-projects .card {
   margin: 0;
   flex-direction: column;
   width: auto;
   height: max-content;
+}
+
+.page-grid .bg-project h1 {
+  color: black;
+  left: 1em;
 }
 
 .grid-projects .project-card::before {
@@ -150,7 +181,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 
 #col-1 .project-card:nth-child(2)::before {
@@ -171,9 +202,18 @@
   background-image: url("../res/le-croissant.jpg");
 }
 
+#col-1 .project-card:nth-child(3)::before {
+  background-image: url("../res/python-code.png");
+}
+
+#col-2 .project-card:nth-child(3)::before {
+  background-image: url("../res/columna-opi.png");
+}
+
 .project-card p {
   padding: 0.5em;
   background-color: rgba(255, 255, 255, 0.7);
+  background-position: left top;
 }
 
 .grid-column {
@@ -183,6 +223,36 @@
   max-width: 50%;
 }
 
+.project-card span {
+  color: aliceblue;
+  background-color: var(--main-bg-color);
+  padding: 1em;
+  text-align: start;
+  font-size: x-large;
+  border-bottom-left-radius: 1em;
+}
+
 .offset {
   height: 15em;
+}
+
+.evaluado {
+  margin-top: .5em;
+}
+
+@keyframes from-right {
+  from{
+    margin-left: -20em;
+  } to {
+    margin: 0;
+  }
+}
+
+@keyframes from-left {
+  from{
+    margin-right: -20em;
+  } to {
+    margin: 0;
+  }
+  
 }
