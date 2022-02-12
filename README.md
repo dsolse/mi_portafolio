@@ -2,6 +2,7 @@
 
 El siguiente proyecto es mi portafolio realizado usando solo html and css
 
+
 Some resources used:
 <a href="https://www.flaticon.com/free-icons/leadership" title="leadership icons">Leadership icons created by Becris - Flaticon</a>
 
