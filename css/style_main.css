@@ -10,6 +10,10 @@
   --main-bg-color: #abc32f;
 }
 
+a {
+  z-index: 30;
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -97,7 +101,7 @@ header {
   position: relative;
   display: flex;
   margin: auto;
-  z-index: -3;
+  z-index: 30;
   width: 50%;
   height: 50%;
   border-radius: 0.4em;
