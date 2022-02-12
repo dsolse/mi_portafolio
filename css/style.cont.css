@@ -5,7 +5,7 @@
     flex-direction: column;
     animation-name: move-from;
     animation-duration: 1s;
-    margin-bottom: 10em;
+    margin-top: 8em;
     animation-fill-mode: forwards;
 }
 
@@ -28,13 +28,13 @@
 }
 
 .red img {
-    width: 4em;
+    width: 6em;
 }
 
 @keyframes move-from {
     from {
-        margin-bottom: 10em;
+        margin-top: -10em;
     } to {
-        margin-bottom: 5em;
+        margin-top: 8em;
     }
 }

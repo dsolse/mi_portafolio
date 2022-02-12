@@ -107,6 +107,23 @@ body {
   animation-duration: 1s;
 }
 
+.container-skills-work .row-skills {
+  position: relative;
+} 
+
+
+.container-skills-work .row-skills h1 {
+  position: absolute;
+  align-self: center;
+  z-index: -200;
+  vertical-align: middle;
+  color: rgba(128, 128, 128, 0.707);
+  left: 0;
+  right: 0;
+  top: -1em;
+  text-align: center;
+} 
+
 .container-skills-work .card {
   min-width: 6em;
   min-height: 3em;
@@ -172,7 +189,7 @@ body {
   text-decoration: none;
   display: inline;
   width: min-content;
-  color: var(--main-bg-color);
+  color: #535f149f;
 }
 
 .grid-projects .project-card::before {
@@ -248,6 +265,12 @@ body {
   text-align: start;
   font-size: x-large;
   border-bottom-left-radius: 1em;
+}
+
+#android-link {
+  background-color: white;
+  padding: 0;
+  display:inline-block;
 }
 
 .offset {
