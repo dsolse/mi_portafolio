@@ -9,6 +9,10 @@
 
 .page-cv {
   overflow: hidden;
+  animation-delay: 2s;
+  animation-duration: 1s;
+  animation-name: make-overflow-y;
+  animation-fill-mode: forwards;
 }
 
 .description-card {
@@ -169,5 +173,13 @@
     margin-bottom: var(--anim-card-offset-p);
   } to {
     margin: 0;
+  }
+}
+
+@keyframes make-overflow-y {
+  from {
+    overflow-y: hidden;
+  } to {
+    overflow-y:auto;
   }
 }
